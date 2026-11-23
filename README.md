@@ -65,7 +65,7 @@ The contract has not undergone an independent security audit and is intended for
 ## Project Structure
 
 ```text
-contracts/
+src/
 ├── VestingVault.sol
 ├── MockToken.sol
 ├── UnauthorizedCaller.sol
@@ -98,7 +98,7 @@ The test suite also checks multiple fixed token amounts. These are deterministic
 
 1. Open [Remix IDE](https://remix.ethereum.org/).
 2. Create a new workspace or import the project files.
-3. Open `contracts/VestingVault.sol`.
+3. Open `src/VestingVault.sol`.
 4. Compile the contract using Solidity Compiler with a compatible Solidity 0.8.x version.
 5. Deploy `MockToken.sol` using Deploy & Run Transactions.
 6. Deploy `VestingVault.sol`, passing the deployed token contract address to its constructor.
@@ -109,7 +109,7 @@ The test suite also checks multiple fixed token amounts. These are deterministic
 ## Running Automated Tests
 
 1. Enable the **Solidity Unit Testing** plugin in Remix.
-2. Set the test directory to `contracts/tests`.
+2. Set the test directory to `src/tests`.
 3. Select `VestingVault_test.sol`.
 4. Click **Run**.
 5. Review the test results.
